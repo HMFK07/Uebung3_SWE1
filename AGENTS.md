@@ -23,3 +23,32 @@
 - Nur relevante Dateien und **einen** passenden Skill lesen, keine Komplettanalyse ohne Auftrag.
 - Standardantwort kurz und belegt: Frage/Befund → Grund → nächster Schritt; Diffs/Pfade statt Volltextwiederholungen.
 - Kurze Runden, Details auf Nachfrage. Keine erfundenen Tools, Konfigurationen, Ergebnisse oder Quellen.
+
+
+## Context slices and incremental requirements
+
+The project evolves through context slices.
+
+A context slice contains limited information about:
+- Relevant stakeholder or persona
+- User goal and usage scenario
+- Known problems and constraints
+- Open questions
+
+Only use the currently released context slices
+as established project context.
+
+Do not infer that future scenarios or features
+have already been approved for implementation.
+
+Scenarios are not specifications.
+
+When new context is introduced:
+1. Compare it with existing requirements.
+2. Identify new or conflicting needs.
+3. Explain which assumptions may no longer hold.
+4. Propose changes for student review.
+5. Preserve earlier decisions in the project history.
+
+Do not silently implement new features or
+rewrite the specification.
