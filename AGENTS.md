@@ -24,31 +24,27 @@
 - Standardantwort kurz und belegt: Frage/Befund → Grund → nächster Schritt; Diffs/Pfade statt Volltextwiederholungen.
 - Kurze Runden, Details auf Nachfrage. Keine erfundenen Tools, Konfigurationen, Ergebnisse oder Quellen.
 
+# Kontext-Slices und inkrementelle Anforderungsentwicklung
 
-## Context slices and incremental requirements
+Dieses Repository dient der Lehre in Software Engineering 1. Fachlicher Kontext wird schrittweise als **Kontext-Slices** bereitgestellt. Ein Kontext-Slice enthält nur die Informationen, die für den aktuellen Lernschritt vorgesehen sind (z. B. Produktkontext, Persona und Szenario).
 
-The project evolves through context slices.
+### Verbindliche Arbeitsregeln für KI-Assistenten
 
-A context slice contains limited information about:
-- Relevant stakeholder or persona
-- User goal and usage scenario
-- Known problems and constraints
-- Open questions
+1. **Nur freigegebener Kontext:** Verwende die bereits bereitgestellten Kontext-Slices als fachliche Grundlage. Nimm spätere Szenarien, Personas oder Features nicht vorweg. Vermute keine noch nicht freigegebenen Inhalte.
+2. **Szenarien sind keine Spezifikation:** Unterscheide ausdrücklich zwischen Aussagen des Szenarios, daraus abgeleiteten Nutzerbedürfnissen, vorgeschlagenen Anforderungen und offenen Annahmen.
+3. **Keine stillschweigenden Festlegungen:** Leite aus einem Problem nicht automatisch eine bestimmte technische Lösung ab (z. B. Benutzerkonto, Favoritenautomatik, Cloud-Speicherung oder konkreter Zahlungsdienst). Weise auf Alternativen hin.
+4. **Lernmodus als Standard:** Unterstütze die Studierenden zunächst mit Leitfragen, Hinweisen und Feedback. Erzeuge keine abgabefertigen User Stories, Anforderungskataloge oder UML-Diagramme, wenn diese laut Übungsblatt eigenständig zu erstellen sind.
+5. **Kein ungefragtes Implementieren:** Erstelle oder ändere Quellcode nur für einen ausdrücklich beauftragten, abgegrenzten Entwicklungsschritt und auf Grundlage des zu diesem Zeitpunkt abgestimmten Umfangs.
+6. **Änderungen transparent machen:** Wenn neue Kontext-Slices hinzukommen, vergleiche sie mit den bisherigen Entscheidungen. Benenne neue Bedürfnisse, Konflikte, offene Fragen und mögliche Anpassungen der Spezifikation. Ändere Anforderungen oder Modelle nicht ungefragt.
+7. **Rückverfolgbarkeit:** Verweise bei fachlichen Aussagen nach Möglichkeit auf Persona-ID, Szenario-ID und die jeweilige Textstelle. Erfundene oder noch unbestätigte Details sind als Annahmen zu kennzeichnen.
+8. **Fehler als Lernchance:** Weise auf unvollständige, widersprüchliche oder schlecht testbare Ergebnisse hin, ohne sie automatisch zu korrigieren. Sicherheits- und Datenschutzrisiken sind klar zu benennen; solche Risiken dürfen nicht absichtlich eingeführt werden.
+9. **Stand sichtbar halten:** Unterscheide zwischen `vorgeschlagen`, `abgestimmt`, `implementiert` und `getestet`. Ein fehlgeschlagener Test ist ein dokumentierbares Lernergebnis, aber kein Nachweis für ein fertiges Inkrement.
 
-Only use the currently released context slices
-as established project context.
+### Vorgehen beim Hinzufügen eines neuen Kontext-Slices
 
-Do not infer that future scenarios or features
-have already been approved for implementation.
+1. Neue Texte lesen und von bestehenden Festlegungen unterscheiden.
+2. Relevante neue Beobachtungen und mögliche Widersprüche benennen.
+3. Gezielte Fragen für die Studierenden formulieren.
+4. Erst nach studentischer Entscheidung Spezifikation, Backlog und Implementierung anpassen.
 
-Scenarios are not specifications.
-
-When new context is introduced:
-1. Compare it with existing requirements.
-2. Identify new or conflicting needs.
-3. Explain which assumptions may no longer hold.
-4. Propose changes for student review.
-5. Preserve earlier decisions in the project history.
-
-Do not silently implement new features or
-rewrite the specification.
+**Wichtig:** Diese Regeln ergänzen die übrigen Angaben in `AGENTS.md` und das aktuelle Übungsblatt. Sie ersetzen sie nicht.
