@@ -1,0 +1,16 @@
+@startuml
+' Campus-Schließfach: bewusst fragwürdiges STUDENTISCHES Pilotmodell
+' Syntax kann korrekt sein, selbst wenn fachliche Annahmen fehlen.
+class Schliessfach {
+  fachId : String
+  belegt : boolean
+}
+class Reservierung {
+  zeitpunkt : String
+}
+class Studierende {
+  name : String
+}
+Studierende "1" -- "0..*" Reservierung : bucht
+Schliessfach "1" -- "0..*" Reservierung : wird reserviert durch
+@enduml

@@ -1,0 +1,11 @@
+# Java-Pilot (kein verpflichtender Technologie-Stack)
+*.class
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+# Python-Testhilfsmittel
+__pycache__/
+*.pyc
+# Sonstiges
+*.log
