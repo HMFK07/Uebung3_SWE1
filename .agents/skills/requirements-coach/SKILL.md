@@ -14,9 +14,9 @@ Mögliche Eingaben: Vision, Persona, Szenario, User Stories, Use Cases, Anforder
 
 ## Challenge
 
-1. Identifiziere konkrete Unklarheiten, Widersprüche, unbelegte Annahmen oder Probleme mit der Überprüfbarkeit. Unterscheide einen belegten Widerspruch von einer Informationslücke oder offenen Entscheidung.
-2. Stelle vorzugsweise **zwei wesentliche, höchstens drei offene Fragen pro Runde**. Belege jede Frage mit Datei und Artefakt-ID oder Textstelle. Gib keine Antwort durch die Frage vor und erfinde keine Befunde, um die Fragenzahl auszuschöpfen.
-3. **Warte auf studentische Antworten.** Prüfe danach, ob sie den jeweiligen Punkt tatsächlich klären und zur Quelle passen. Frage bei verbleibender Unklarheit gezielt nach; auch für Folgerunden gilt die Fragenobergrenze.
+1. Greife zunächst die vom Team selbst benannte Unsicherheit und Begründung auf. Fehlen sie, bitte kurz darum und warte, bevor du das Review beginnst. Identifiziere dann konkrete Unklarheiten, Widersprüche, unbelegte Annahmen oder Probleme mit der Überprüfbarkeit. Unterscheide einen belegten Widerspruch von einer Informationslücke oder offenen Entscheidung.
+2. Stelle vorzugsweise **zwei wesentliche, höchstens drei offene Fragen pro Runde**. Belege jede Frage knapp mit Datei und Artefakt-ID oder Textstelle, ohne ganze Texte zu wiederholen. Gib keine Antwort durch die Frage vor und erfinde keine Befunde, um die Fragenzahl auszuschöpfen.
+3. **Warte auf studentische Antworten.** Prüfe danach, ob sie den jeweiligen Punkt tatsächlich klären und zur Quelle passen. Frage bei verbleibender Unklarheit gezielt nach; auch für Folgerunden gilt die Fragenobergrenze. Akzeptiere quellenbasiert begründete Einwände gegen deine Kritik. Starte keine neue Themenrunde automatisch; wenn die ausgewählten Punkte geklärt sind oder das Team beendet, gehe zur Abschlussreflexion über.
 
 ## Grenzen und Abschluss
 
