@@ -1,12 +1,12 @@
 # Übung 3 – KI-Freigabe, WS 2026/27
 
-Diese Freigabe konkretisiert [Übungsblatt 3](https://docs.google.com/document/d/1lnprAB5V6oSyTlOZC8MchO9pPu3UpWEvFekyI5NcVGg/edit), Aufgaben 2 und 3. Sie gilt für Fundbüro-Anwendung, Verleih-Plattform und Repair-Café-Anwendung. Die allgemeinen Arbeitsregeln stehen in [AGENTS.md](../AGENTS.md).
+Diese Freigabe konkretisiert [Übungsblatt 3 in Moodle](https://moodle.hm.edu/pluginfile.php/2162747/mod_resource/content/0/U%CC%88bungsblatt3_SWE1_2627.pdf), Aufgaben 2 und 3. Sie gilt für Fundbüro-Anwendung, Verleih-Plattform und Repair-Café-Anwendung. Die allgemeinen Arbeitsregeln stehen in [AGENTS.md](../AGENTS.md).
 
 ## Lernrahmen
 
 Die Ausgangsvisionen beschreiben den fachlichen Themenbereich. Ziel ist eine kleine, verständliche Lehranwendung mit einem nachvollziehbaren fachlichen Kernablauf. Im Vordergrund stehen Verständnis und begründete studentische Entscheidungen. Eine spätere Umsetzung soll diesen gewählten Ablauf funktionsfähig abbilden; eine produktionsreife Plattform ist kein Übungsziel.
 
-Begründet, welchen Ausschnitt ihr im aktuellen Lernschritt betrachtet und welche Aspekte ihr zurückstellt. Aus Begriffen wie „Suche“, „Plattform“ oder „passende Helfer“ folgt keine Vorgabe für automatische Zuordnung, Empfehlungssysteme oder umfassende Identitätsprüfung. Technische Entscheidungen werden damit nicht vorweggenommen. Die Aufgaben und Mindestumfänge des Übungsblatts bleiben verbindlich.
+Begründen Sie, welchen Ausschnitt Sie im aktuellen Lernschritt betrachten und welche Aspekte Sie zurückstellen. Aus Begriffen wie „Suche“, „Plattform“ oder „passende Helfer“ folgt keine Vorgabe für automatische Zuordnung, Empfehlungssysteme oder umfassende Identitätsprüfung. Technische Entscheidungen werden damit nicht vorweggenommen. Die Aufgaben und Mindestumfänge des Übungsblatts bleiben verbindlich.
 
 ## Ausdrücklich freigegeben
 

@@ -2,6 +2,7 @@
 
 Für Übung 3 gelten die Freigaben und Grenzen in [kurs/uebung-03.md](kurs/uebung-03.md). Vorhandene Skills erweitern diese Freigaben nicht.
 
+- **Übungsblatt bleibt außerhalb des KI-Kontexts:** Der Moodle-Link zu Übungsblatt 3 ist ausschließlich für Studierende. Rufe das Blatt weder über Moodle noch über alternative Quellen ab und lade es nicht herunter. Fordere keine Kopie als Datei oder Chat-Kontext an; arbeite mit den lokalen Freigaben und ausdrücklich benannten studentischen Artefakten.
 - **Lernen vor Produktivität:** Unterstütze Verständnis und begründete Entscheidungen. Antworte kurz und auf Deutsch.
 - **Eigenständige Entscheidungen:** Die Studierenden verantworten Anforderungen und Modelle. Kennzeichne Annahmen und offene Fragen; triff keine fachlichen Entscheidungen für das Team.
 - **Minimaler Kontext:** Lies nur die für den konkreten Auftrag relevanten, benannten Dateien und benötigten Ausschnitte. Keine pauschale Repository-Analyse; frage bei fehlendem Kontext gezielt nach.
