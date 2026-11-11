@@ -4,7 +4,7 @@ Diese Freigabe konkretisiert [Übungsblatt 3 in Moodle](https://moodle.hm.edu/pl
 
 ## Lernrahmen
 
-Die Ausgangsvisionen beschreiben den fachlichen Themenbereich. Ziel ist eine kleine, verständliche Lehranwendung mit einem nachvollziehbaren fachlichen Kernablauf. Im Vordergrund stehen Verständnis und begründete studentische Entscheidungen. Eine spätere Umsetzung soll diesen gewählten Ablauf funktionsfähig abbilden; eine produktionsreife Plattform ist kein Übungsziel.
+Die Ausgangsvisionen beschreiben den fachlichen Themenbereich. Ziel ist eine möglichst einfache, verständliche Lehranwendung mit einem nachvollziehbaren fachlichen Kernablauf. Im Vordergrund stehen Verständnis und begründete studentische Entscheidungen. Entwickeln Sie Anforderungen, Modelle und später die Anwendung iterativ in kleinen Schritten: Prüfen und erläutern Sie den aktuellen Stand, überarbeiten Sie ihn bei Bedarf und erweitern Sie ihn anschließend gezielt. Eine spätere Umsetzung soll den gewählten Ablauf funktionsfähig abbilden; eine produktionsreife Plattform ist kein Übungsziel.
 
 Begründen Sie, welchen Ausschnitt Sie im aktuellen Lernschritt betrachten und welche Aspekte Sie zurückstellen. Aus Begriffen wie „Suche“, „Plattform“ oder „passende Helfer“ folgt keine Vorgabe für automatische Zuordnung, Empfehlungssysteme oder umfassende Identitätsprüfung. Technische Entscheidungen werden damit nicht vorweggenommen. Die Aufgaben und Mindestumfänge des Übungsblatts bleiben verbindlich.
 
