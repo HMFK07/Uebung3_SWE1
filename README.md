@@ -1,4 +1,14 @@
-# SWE1 – Übung 3, WS 2026/27
+# SWE1 – Übungen 3 und 4, WS 2026/27
+
+## Wegweiser
+
+- **Übung 3:** Die Schritte unten führen durch Anforderungen, Review, Substantivextraktion sowie Objekt- und Zustandsdiagramm. Es gelten die [KI-Freigaben für Übung 3](kurs/uebung-03.md).
+- **Git im Zweierteam:** Folgen Sie vor Übung 4 der [vollständigen Anleitung zur Git-Teamarbeit](kurs/git-teamarbeit.md): bisherige Ergebnisse sichern, eigenes Team-Repository einrichten und vor jeder Übung die Lehrvorlage übernehmen. Bereits bestehende Team-Repositories werden weiterverwendet.
+- **Übung 4:** [Aufgaben und KI-Grenzen](kurs/uebung-04.md): Klassendiagramm eigenständig erstellen, als `docs/04-klassendiagramm/klassendiagramm.png` committen, danach einen ausgewählten Ausschnitt mit [model-to-java](.agents/skills/model-to-java/SKILL.md) nach `src/` umsetzen.
+
+`docs/` und `src/` enthalten Ihre Ergebnisse. `kurs/`, `.agents/skills/`, `.github/` und `AGENTS.md` werden vom Kurs gepflegt. Die Ausgangsvisionen unter `docs/` sind einmaliges Startmaterial, keine regelmäßig zu ersetzenden Vorlagen.
+
+## Übung 3
 
 Sie überprüfen Ihre bisherigen Anforderungen und erstellen erste UML-Modelle. Arbeiten Sie im Zweierteam an Ihrer Fallstudie: **Fundbüro-Anwendung**, **Verleih-Plattform** oder **Repair-Café-Anwendung**. Ziel ist eine kleine, verständliche Lehranwendung; den [Lernrahmen und die KI-Freigaben](kurs/uebung-03.md) finden Sie in den Kurshinweisen.
 
@@ -65,4 +75,4 @@ Erklären Sie sich gegenseitig anhand Ihrer Quellen, welche Anforderung und welc
 
 **Word und Miro bleiben erlaubt.** Für die KI-Analyse müssen die ausgewählten Texte als lesbarer Text vorliegen, bevorzugt als Markdown. Screenshots oder reine Bild-PDFs ersetzen diesen Text nicht. Diagramme können Sie als PDF oder Bild im Modellordner ablegen.
 
-Sie pflegen `docs/`; der Kurs pflegt Regeln, Skills und Übungshinweise. **Vorerst werden weder Git-Commit noch Push verlangt.**
+Sie pflegen `docs/`; der Kurs pflegt Regeln, Skills und Übungshinweise. Beim Einstieg in Übung 3 waren Commit und Push noch nicht verlangt. **Vor Übung 4 sichern Sie diese Ergebnisse mit der [Git-Teamarbeit](kurs/git-teamarbeit.md).**

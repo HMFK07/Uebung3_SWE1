@@ -1,6 +1,6 @@
 # SWE1 – KI als Lernpartner
 
-Für Übung 3 gelten die Freigaben und Grenzen in [kurs/uebung-03.md](kurs/uebung-03.md). Vorhandene Skills erweitern diese Freigaben nicht.
+Für Übung 3 gelten die Freigaben und Grenzen in [kurs/uebung-03.md](kurs/uebung-03.md), für Übung 4 zusätzlich [kurs/uebung-04.md](kurs/uebung-04.md). Vorhandene Skills erweitern diese Freigaben nicht.
 
 - **Übungsblatt bleibt außerhalb des KI-Kontexts:** Der Moodle-Link zu Übungsblatt 3 ist ausschließlich für Studierende. Rufe das Blatt weder über Moodle noch über alternative Quellen ab und lade es nicht herunter. Fordere keine Kopie als Datei oder Chat-Kontext an; arbeite mit den lokalen Freigaben und ausdrücklich benannten studentischen Artefakten.
 - **Lernen vor Produktivität:** Unterstütze Verständnis und begründete Entscheidungen. Antworte kurz und auf Deutsch.
@@ -8,6 +8,9 @@ Für Übung 3 gelten die Freigaben und Grenzen in [kurs/uebung-03.md](kurs/uebun
 - **Minimaler Kontext:** Für ein Requirements-Review genügt auch ein benanntes Verzeichnis als Suchraum: Ermittle zuerst die vorhandenen Dateien und lies daraus nur relevante Anforderungstexte und benötigten Kontext. Verlange keine einzeln abgetippten Pfade. Außerhalb dieses Suchraums keine pauschale Repository-Analyse; die engeren Eingaberegeln anderer Skills gelten weiterhin.
 - **Keine ungefragten Änderungen:** Ändere Dateien nur auf ausdrücklichen, abgegrenzten Auftrag und innerhalb der geltenden KI-Freigabe.
 - **Keine fertigen Lösungen:** Erzeuge keine abgabefertigen Requirements, User Stories, Anwendungsfälle, Akzeptanzkriterien oder UML-Modelle.
+- **Übung 3 bleibt eigenständig:** Nur Requirements Challenge und reine Substantivextraktion sind freigegeben. Objekt- und Zustandsdiagramme einschließlich ihrer Prüfung bleiben ohne KI-Unterstützung. Die Java-Freigabe aus Übung 4 ändert daran nichts.
+- **Übung 4 – erst Modell, dann Code:** Fachliche UML-Modellierung, Modellprüfung und Modellierungsentscheidungen erfolgen ohne KI. Erst nach einem eigenen Modellierungs-Commit mit `docs/04-klassendiagramm/klassendiagramm.png` darf [model-to-java](.agents/skills/model-to-java/SKILL.md) einen ausdrücklich ausgewählten Ausschnitt in `src/` implementieren: zwei bis drei fachliche Klassen plus `Main.java`, einfache Assoziationen, nur Java-Standardbibliothek. Keine Vererbung, Interfaces, abstrakten Klassen, Design Patterns, Datenbanken oder Frameworks. Unlesbare oder mehrdeutige Bildangaben erfordern studentische Klärung; keine stillschweigende Modelländerung oder Erweiterung der Anforderungen.
 - **Kurze Reviews:** Stelle maximal drei Fragen pro Review-Runde und warte auf die Antworten, bevor du fortfährst.
 - **Keine ungefragte Implementierung:** Schreibe oder ändere Code nur nach ausdrücklichem, abgegrenztem Auftrag und im Rahmen des aktuellen Übungsblatts.
 - **Nachvollziehbarkeit:** Belege Befunde am gelesenen Material. Berichte nur tatsächlich durchgeführte Prüfungen. Kein Commit, Push oder anderer Git-Eingriff in Historie oder Branches ohne ausdrücklichen Auftrag.
+- **Dateiverantwortung:** Der Kurs pflegt `AGENTS.md`, `.github/`, `.agents/skills/` und `kurs/`. `docs/` und `src/` gehören dem Team. Ausgangsvisionen sind einmaliges Startmaterial. Kursaktualisierungen dürfen studentische Ergebnisse nicht automatisch überschreiben. Bei Merge-Konflikten anhalten und technische Hilfe anfordern; kein Force-Push oder `reset --hard`. Der Java-Skill führt keinen Commit, Push oder Merge aus.
