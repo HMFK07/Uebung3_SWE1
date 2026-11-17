@@ -1,32 +1,46 @@
 ---
 name: model-to-java
-description: Implementiert in Übung 4 nach eigenem Modellierungs-Commit zwei bis drei ausdrücklich ausgewählte fachliche Klassen plus Main.java aus einem studentischen UML-PNG in Java; keine UML-Modellierung.
+description: Überträgt in Übung 4 ein selbst erstelltes, committetes UML-PNG schrittweise in lauffähiges Java; führt mit konkreten Auswahlvorschlägen durch offene Details, Test und Ergänzung. Kein Entwurf des ersten UML-Modells.
 ---
-# Vom eigenen UML-PNG zu Java
+# Vom eigenen UML-PNG zur testbaren Java-Version
 
-Es gelten [AGENTS.md](../../../AGENTS.md) und die [Freigabe für Übung 4](../../../kurs/uebung-04.md). Antworte kurz auf Deutsch. Die Freigaben aus Übung 3 werden nicht erweitert.
+Es gelten [AGENTS.md](../../../AGENTS.md) und die [aktualisierte Durchführung für Übung 4](../../../kurs/uebung-04.md). Antworte kurz auf Deutsch und führe in kleinen Schritten. Übung 3 bleibt unverändert.
 
-## Eingabe und Freigabe prüfen
+## Einmal starten
 
-- Ermittle die Projektwurzel einmal. Eingabe ist das selbst erstellte Bild `docs/04-klassendiagramm/klassendiagramm.png`, im Copilot-Auftrag als `@docs/04-klassendiagramm/klassendiagramm.png` angehängt. Öffne es mit der verfügbaren Bildfunktion. Wenn keine Bildverarbeitung verfügbar ist oder das Bild nicht zugänglich ist: benenne das Hindernis und halte an; keine Inhalte aus Dateinamen oder Anforderungen erschließen.
-- Prüfe ausschließlich lesend mit Git, dass das PNG in einem eigenen, vom Team benannten Modellierungs-Commit auf dem aktuellen Übungsbranch enthalten ist, dieser Commit zu `HEAD` gehört und die aktuelle PNG-Fassung seit diesem Commit unverändert ist. Nutze etwa `git log --oneline -- docs/04-klassendiagramm/klassendiagramm.png`, `git merge-base --is-ancestor <Commit-ID> HEAD` und den Vergleich der Blob-IDs von `git rev-parse <Commit-ID>:docs/04-klassendiagramm/klassendiagramm.png` und `git hash-object docs/04-klassendiagramm/klassendiagramm.png`. Prüfe auch vorgemerkte Änderungen. Eine bloße uncommittete PNG-Datei genügt nicht. Bei fehlendem oder unklarem Nachweis bitte das Team um den eigenen Commit und warte; erst danach Code schreiben. Eine Commit-ID belegt keine eigenständige Urheberschaft: diese erklärt das Team selbst.
-- Das Team benennt ausdrücklich zwei bis drei zusammenhängende fachliche Klassen und den Auftrag zur Umsetzung in `src/` plus `Main.java`. Fehlt die Auswahl, frage danach, ohne Klassen vorzuschlagen. Lies keine Anforderungen, Personas oder weiteren Modelle zur Ergänzung. Prüfe vorhandene Zieldateien vor Änderungen und erhalte studentischen Code außerhalb des Auftrags.
+- Ermittle zuerst die Projektwurzel aus der Arbeitsbereichs-Dateiliste; lies Regeln über die tatsächlich gefundenen Pfade. Verwende vorhandenen Kontext, keine wiederholten Such- oder Leseversuche mit geratenen Pfaden.
+- Eingabe ist `docs/04-klassendiagramm/klassendiagramm.png`, im Auftrag als `@docs/04-klassendiagramm/klassendiagramm.png` angehängt. Lies das Bild einmal mit der Bildfunktion. Ohne Bildzugriff anhalten und technische Hilfe benennen; kein Ersatzentwurf aus Anforderungen. Unlesbare Stellen präzise benennen, nichts erraten.
+- Prüfe nur lesend, ob das aktuelle PNG auf dem Übungsbranch committet ist: jüngster PNG-Commit aus `git log -1 --format=%H -- <PNG-Pfad>`, Zugehörigkeit zu `HEAD`, identischer Arbeitsdatei-Blob und keine vorgemerkte PNG-Änderung. Ermittle die Commit-ID selbst, verlange sie nicht routinemäßig vom Team. Fehlt der Commit, erkläre den nötigen studentischen Schritt einmal und warte. Bei Erfolg genügt „PNG committet und lesbar“. Prüfe erneut nur bei geändertem Bild oder Git-Stand. Eigenständige Urheberschaft verantwortet das Team; Git beweist sie nicht.
+- Übernimm die beauftragten Klassen. „Alle Klassen“ oder „die Klassen im Bild“ gilt als Auswahl; verlange keine künstliche Reduktion. Zwei bis drei Klassen sind eine Einstiegsempfehlung, keine Obergrenze. Bei größerem Umfang teile die Umsetzung in lauffähige Etappen. Lies vorhandenen Zielcode vor Änderungen; keine Anforderungen oder Personas nachladen.
 
-## Bild lesen, Unsicherheiten klären
+## Eine einfache erste Version ermöglichen
 
-Lies für den gewählten Ausschnitt Klassennamen, Attribute mit Typen und Sichtbarkeiten, Methoden mit Parametern und Rückgabetypen sowie Assoziationsnamen und Multiplizitäten an beiden Enden. Nenne den gelesenen Umfang knapp. Das ist eine technische Übertragung, kein fachliches UML-Review.
+Standard ist eine **lauffähige Demonstration** mit `Main.java`. Wünscht das Team ausdrücklich nur die Struktur, übertrage zunächst Klassen, Attribute und Beziehungen und kennzeichne offene Methoden. Frage nicht zusätzlich nach dem Arbeitsmodus, wenn der Auftrag ihn bereits klärt.
 
-Bei unlesbaren, fehlenden oder mehrdeutigen Angaben benenne die betroffene Klasse oder Bildstelle und stelle höchstens drei gezielte Fragen pro Runde. Das gilt auch für nicht erkennbare Navigierbarkeit, nicht festgelegtes Methodenverhalten oder eine Beziehung zu einer nicht ausgewählten Klasse, die den Ausschnitt unklar macht. Warte vor der betroffenen Implementierung auf die studentische Entscheidung; rate keine Bezeichnungen, Multiplizitäten oder Fachregeln. Biete keine fachlichen Modellalternativen an. Das Team passt sein Diagramm bei Bedarf selbst ohne KI an und committet die neue PNG-Fassung vor Fortsetzung. Keine stillschweigende Modelländerung und keine zusätzlichen Klassen zur Umgehung einer Grenze.
+Lies Namen, Typen, Sichtbarkeiten, Signaturen und Assoziationen samt Multiplizitäten. Das PNG darf Lücken oder Fehler enthalten. Benenne konkrete Hindernisse bei der technischen Übertragung; verlange kein vorab perfektioniertes Modell und beginne kein umfassendes UML-Review. Eindeutige Teile können bereits implementiert und getestet werden. Das ursprüngliche PNG bleibt erhalten; für jeden Code-Schritt ist kein neuer Modell-Commit nötig.
 
-## Eng begrenzt implementieren
+Technische Hilfen wie Konstruktoren, Objektreferenzen, eine Standardbibliotheks-Liste oder Testdaten in `Main` darfst du im beauftragten Umfang selbst wählen und kurz erklären. Bei offenen, für diese Etappe nicht benötigten Methoden sind klar markierte Platzhalter zulässig: etwa `UnsupportedOperationException("Noch nicht umgesetzt")` bei bekannter Signatur. Behaupte dafür keine fachliche Umsetzung. Platzhalter dürfen die erste Kompilierung und den demonstrierten Ablauf nicht verhindern; benötigte unbekannte Typen sind vorab zu klären.
 
-- Schreibe genau die ausgewählten zwei bis drei fachlichen Klassen und `src/Main.java`, vorzugsweise als einfache Java-Dateien ohne Packages. Nur Java-Standardbibliothek und grundlegende Java-Konzepte. Keine Vererbung, Interfaces, abstrakten Klassen, Design Patterns, Datenbanken, Frameworks oder zusätzlichen Anforderungen.
-- Übertrage nur modellierte Elemente und die vom Team geklärten Angaben. Einfache Konstruktoren zur Initialisierung und die Startmethode sind technische Hilfen; erfinde keine fachlichen Operationen. Erkläre nötige technische Abbildungen knapp, beispielsweise Objektreferenz oder Standardbibliotheks-Liste für eine Assoziation. Bibliothekstypen wie `String` und `ArrayList` sind keine zusätzlichen fachlichen Klassen; implementiere keine eigenen Interfaces.
-- Bilde die geklärten Multiplizitäten nachvollziehbar ab. Eine Liste allein erzwingt keine Untergrenze oder Gegenrichtung; benenne solche Grenzen und setze die geklärten Regeln im erlaubten Ausschnitt um, ohne weitere Fachregeln zu erfinden. Ist ein korrektes Verhalten im freigegebenen Umfang nicht möglich, benenne den Blocker und warte auf die Entscheidung des Teams.
-- `Main.java` hat `public static void main(String[] args)`, erzeugt mindestens zwei Objekte, stellt mindestens eine modellierte Beziehung her, ruft mindestens zwei Methoden auf und zeigt Ergebnisse mit `System.out.println(...)`. Nutze einfache Beispieldaten; frage nach, falls dafür fachliches Verhalten fehlt.
+## Konkret auswählen statt wiederholt abstrakt fragen
 
-## Technisch prüfen und übergeben
+Sammle nur die Blocker der nächsten Etappe in **einer kurzen Runde mit höchstens drei Themen**. Biete pro Thema zwei bis drei einfache, konkrete Möglichkeiten und markiere eine Empfehlung. Beispiel:
 
-Kompiliere und starte den Ausschnitt mit dem vorhandenen JDK, beispielsweise `javac -encoding UTF-8 src/*.java` und `java -cp src Main`. Prüfe einen normalen Ablauf und, soweit sinnvoll, einen geklärten Rand- oder Fehlerfall. Keine Abhängigkeiten installieren. Fehlt das JDK oder scheitert ein Werkzeug, berichte dies und behaupte keinen erfolgreichen Test.
+> Preis für die Demo: A – fester Beispielwert 2,50 Euro, noch keine Tarifberechnung (empfohlen); B – Methode zunächst zurückstellen; C – eigene Regel nennen. Antwort zum Beispiel: „Preis A“.
 
-Nenne geänderte Dateien, tatsächlich ausgeführte Befehle und Ergebnisse sowie verbleibende Unsicherheiten kurz. Fordere zum eigenen Vergleich von PNG und Code und zur gegenseitigen Erklärung ohne KI auf. Ändere weder PNG noch Anforderungen oder andere Modelle. Führe keinen Commit, Push oder Merge aus; Modell- und Code-Commit erstellt das Team selbst getrennt.
+Für nicht definierte Typen kannst du eine vorläufige Abbildung auf einen Standardtyp oder das Zurückstellen des betroffenen Elements zur Auswahl stellen. Nenne die konkrete Abweichung vom PNG. Für größere Lücken darfst du einen kleinen zusammenhängenden Demo-Ablauf vorschlagen, ohne neue fachliche Anforderungen oder Klassen einzuführen.
+
+Warte auf eine **ausdrückliche Auswahl** für Demo-Fachverhalten, vorläufige Typabbildungen und andere Modellabweichungen. Eine Vorbelegung oder pauschales „Accept“ ersetzt sie nicht. „Simulation“ oder „Dummy-Daten“ ohne Festlegung löst einen konkreten Vorschlag aus, keine weitere offene Frage nach einer vollständigen Fachregel. Nimm bestätigte Entscheidungen an, fasse sie in einem Satz zusammen und setze sie ohne zusätzliche Bestätigungsrunde um. Bereits zurückgestellte Methoden nicht erneut diskutieren. Sind noch Angaben nötig, frage nur nach dem verbleibenden konkreten Hindernis; stelle die ganze Runde nicht erneut.
+
+## Implementieren, testen, reviewen, ergänzen
+
+- Implementiere die erste kleine lauffähige Version in `src/`, möglichst ohne Packages. Nur einfache Assoziationen, Java-Grundlagen und Standardbibliothek. Keine Vererbung, Interfaces, abstrakten Klassen, Design Patterns, Datenbanken, Frameworks oder ungefragten zusätzlichen fachlichen Klassen und Anforderungen. Bewahre vorhandenen studentischen Code außerhalb des Auftrags.
+- Kennzeichne vereinbarte Demo-Werte, vorläufige Abbildungen und offene Methoden mit kurzen Kommentaren am Code. Keine stillschweigend erfundenen Fachregeln oder fingierten Erfolgsergebnisse. Bilde geklärte Multiplizitäten nachvollziehbar ab; eine Liste allein erzwingt keine Mindestanzahl oder Gegenrichtung. Noch nicht umgesetzte Regeln offen nennen.
+- `Main.java` enthält `public static void main(String[] args)` und einen nachvollziehbaren Ablauf. Ziel sind mindestens zwei Objekte, eine modellierte Beziehung, zwei Methodenaufrufe und Ausgaben mit `System.out.println(...)`. Demonstriere zuerst die bereits umgesetzten Teile; noch offene Lernziele benennen und in einer nächsten Etappe ergänzen.
+- Kompiliere und starte jede neue Etappe, etwa `javac -encoding UTF-8 src/*.java` und `java -cp src Main`. Prüfe den Demo-Ablauf und einen passenden Randfall, soweit Verhalten festgelegt ist. Keine Abhängigkeiten installieren; fehlendes JDK oder fehlgeschlagene Befehle ehrlich berichten. Ein laufender Demo-Ablauf beweist keine vollständige fachliche Umsetzung.
+- Übergib kurz: **Was läuft? Was ist Demo/offen? Was soll das Team jetzt testen?** Nenne tatsächlich ausgeführte Tests. Gib einen konkreten nächsten Schritt zur Wahl, etwa „A: Statusverhalten ergänzen; B: zuerst eure Testergebnisse besprechen“. Warte auf studentischen Test/Review oder Fortsetzungsauftrag, bevor du die nächste Etappe beginnst. Verlange keine erneute Entscheidung über bereits geklärte Punkte.
+
+Das Team vergleicht Code und PNG, erklärt den Ablauf ohne KI und entscheidet über Ergänzungen. Führe keinen Commit, Push oder Merge aus. Der eigene Modell-Commit und die folgenden Code-Commits bleiben getrennt.
+
+## Später: Ist-Diagramm aus geprüftem Code
+
+Nur auf einen **eigenen ausdrücklichen Folgeauftrag** darfst du die tatsächlich implementierten Klassen, Attribute, Methoden und Beziehungen als separates Ist-Klassendiagramm ableiten, beispielsweise in `docs/04-klassendiagramm/klassendiagramm-aus-code.md` mit Mermaid. Lies dafür nur den benannten, geprüften Java-Code. Keine neuen Elemente, fachlichen Verbesserungen oder unbelegten Multiplizitäten ergänzen. Dokumentiere nicht ableitbare Angaben als offen. Das erste PNG und die Modelle aus Übung 3 bleiben unverändert. Das Team prüft die Ableitung und begründet Unterschiede zum ursprünglichen Modell selbst.

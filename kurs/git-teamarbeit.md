@@ -161,7 +161,7 @@ git switch uebung-04-team
 git pull --ff-only origin uebung-04-team
 ```
 
-Arbeiten Sie eigenständig im Rahmen der jeweiligen KI-Freigabe. In [Übung 4](uebung-04.md) entsteht das UML-Modell vollständig ohne KI; erst nach Ihrem eigenen Modellierungs-Commit darf Copilot den ausgewählten Java-Ausschnitt umsetzen. Sichern und pushen Sie bei jeder Übergabe Ihre geprüften Änderungen. Beispiel für die zwei getrennten Arbeitsschritte:
+Arbeiten Sie eigenständig im Rahmen der jeweiligen KI-Freigabe. In [Übung 4](uebung-04.md) entsteht das erste UML-Modell vollständig ohne KI; erst nach Ihrem eigenen Modellierungs-Commit darf Copilot die beauftragten Klassen schrittweise in Java umsetzen. Sichern und pushen Sie bei jeder Übergabe Ihre geprüften Änderungen. Beispiel für die getrennten Modell- und Code-Schritte:
 
 ```bash
 git status
@@ -171,17 +171,17 @@ git commit -m "Eigenes Klassendiagramm fuer Uebung 4"
 git push origin uebung-04-team
 ```
 
-Erst danach Copilot für Java verwenden, Code selbst prüfen und starten. Anschließend:
+Erst danach Copilot für eine erste lauffähige Java-Version verwenden, Code selbst prüfen und starten. Sichern Sie diesen testbaren Zwischenstand separat; vervollständigen Sie ihn nach Ihrem Review in weiteren Code-Commits. Kennzeichnen Sie im Commit gegebenenfalls den Demo-Stand und seine offenen Punkte. Beispiel:
 
 ```bash
 git status
 git add src/
 git diff --cached
-git commit -m "Java-Ausschnitt mit Copilot umgesetzt und geprueft"
+git commit -m "Erste lauffaehige Java-Demo mit Copilot geprueft"
 git push origin uebung-04-team
 ```
 
-Prüfen Sie jeweils, dass nur die beabsichtigten Dateien vorgemerkt sind. PNGs müssen Sie zusätzlich öffnen. `.class`-Dateien werden ignoriert. Ein Push geht immer an `origin`, nie an `vorlage`. Wird er wegen zwischenzeitlicher Team-Commits abgelehnt, stoppen Sie die parallele Bearbeitung und klären Sie den Stand gemeinsam, bei Bedarf mit technischer Hilfe. Kein erzwungenes Pushen.
+Prüfen Sie jeweils, dass nur die beabsichtigten Dateien vorgemerkt sind. PNGs müssen Sie zusätzlich öffnen. `.class`-Dateien werden ignoriert. Ein später auf Ihren Auftrag aus geprüftem Code abgeleitetes Ist-Diagramm wird als eigene Datei und in einem weiteren Commit gesichert; das ursprüngliche Modell-PNG bleibt erhalten. Ein Push geht immer an `origin`, nie an `vorlage`. Wird er wegen zwischenzeitlicher Team-Commits abgelehnt, stoppen Sie die parallele Bearbeitung und klären Sie den Stand gemeinsam, bei Bedarf mit technischer Hilfe. Kein erzwungenes Pushen.
 
 Persönliche Branches sind optional für Teams, die diesen Ablauf bereits sicher beherrschen; für diese Übung genügt der gemeinsame Branch mit verabredeten Übergaben.
 

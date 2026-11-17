@@ -4,7 +4,7 @@
 
 - **Übung 3:** Die Schritte unten führen durch Anforderungen, Review, Substantivextraktion sowie Objekt- und Zustandsdiagramm. Es gelten die [KI-Freigaben für Übung 3](kurs/uebung-03.md).
 - **Git im Zweierteam:** Folgen Sie vor Übung 4 der [vollständigen Anleitung zur Git-Teamarbeit](kurs/git-teamarbeit.md): bisherige Ergebnisse sichern, eigenes Team-Repository einrichten und vor jeder Übung die Lehrvorlage übernehmen. Bereits bestehende Team-Repositories werden weiterverwendet.
-- **Übung 4:** [Aufgaben und KI-Grenzen](kurs/uebung-04.md): Klassendiagramm eigenständig erstellen, als `docs/04-klassendiagramm/klassendiagramm.png` committen, danach einen ausgewählten Ausschnitt mit [model-to-java](.agents/skills/model-to-java/SKILL.md) nach `src/` umsetzen.
+- **Übung 4:** [Aufgaben und aktualisierte KI-Grenzen](kurs/uebung-04.md): Klassendiagramm eigenständig erstellen und als `docs/04-klassendiagramm/klassendiagramm.png` committen. Mit [model-to-java](.agents/skills/model-to-java/SKILL.md) zunächst eine kleine lauffähige Java-Version nach `src/` übertragen, selbst testen und reviewen, danach gezielt vervollständigen. Zwei bis drei Klassen sind eine Empfehlung; auch alle Klassen im Bild sind möglich. Später kann auf eigenen Auftrag ein separates Ist-Diagramm aus dem geprüften Code entstehen.
 
 `docs/` und `src/` enthalten Ihre Ergebnisse. `kurs/`, `.agents/skills/`, `.github/` und `AGENTS.md` werden vom Kurs gepflegt. Die Ausgangsvisionen unter `docs/` sind einmaliges Startmaterial, keine regelmäßig zu ersetzenden Vorlagen.
 
