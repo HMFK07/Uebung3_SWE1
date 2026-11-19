@@ -1,8 +1,15 @@
 # Java
 *.class
+/out/
 # Editor / OS
 .vscode/
-.idea/
+/.idea/*
+!/.idea/modules.xml
+*.iml
+!/SWE1.iml
+/.run/*
+!/.run/Main.run.xml
+*.iws
 .DS_Store
 # Python
 __pycache__/

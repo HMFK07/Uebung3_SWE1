@@ -21,7 +21,7 @@ Ein Remote ist eine benannte Repository-Adresse. Nach der Einrichtung gilt auf b
 - `origin` → Ihr eigenes Team-Repository: dorthin pushen Sie.
 - `vorlage` → `https://github.com/HMFK07/Uebung3_SWE1.git`: von dort holen Sie Kursaktualisierungen.
 
-Pushen Sie **ausschließlich zu `origin`**, nachdem Sie dessen Adresse geprüft haben. Der Kurs pflegt `AGENTS.md`, `.github/`, `.agents/skills/` und `kurs/`. Ihre Ergebnisse liegen in `docs/` und später `src/`. Ausgangsvisionen unter `docs/` sind einmaliges Startmaterial. Kopieren Sie bei Kursaktualisierungen keine Verzeichnisse pauschal über Ihre Ergebnisse.
+Pushen Sie **ausschließlich zu `origin`**, nachdem Sie dessen Adresse geprüft haben. Der Kurs pflegt `AGENTS.md`, `.github/`, `.agents/skills/`, `kurs/` und die portable IntelliJ-Konfiguration (`SWE1.iml`, `.idea/modules.xml`, `.run/Main.run.xml`). Ihre Ergebnisse liegen in `docs/` und später `src/`. Ausgangsvisionen unter `docs/` sind einmaliges Startmaterial. Kopieren Sie bei Kursaktualisierungen keine Verzeichnisse pauschal über Ihre Ergebnisse.
 
 ## Einmalige Einrichtung
 
@@ -112,6 +112,8 @@ Dieser Ablauf setzt voraus, dass die Team-Historie von der Lehrvorlage abstammt.
 ## Vor jeder Übung: Vorlage übernehmen und Branch anlegen
 
 Eine Person koordiniert das Update; die andere pausiert ihre Bearbeitung. Vorherige Übungsbranches sollen nach Review in `main` zusammengeführt sein.
+
+**Bei der ersten Übernahme der IntelliJ-Konfiguration in ein bereits eingerichtetes Teamprojekt:** Sichern Sie Ihre vorhandene lokale `.idea/`-Konfiguration, `.run/` und eigene `.iml`-Dateien außerhalb des Repositorys, bevor Sie aktualisieren. Git kann bisher ignorierte IDE-Dateien durch neu versionierte Vorlagendateien ersetzen. Eine funktionierende eigene Einrichtung soll erhalten bleiben; lassen Sie die Übernahme bei abweichenden Modulen technisch begleiten. Der Kurs liefert keine `Main.java` mit und ersetzt keinen Java-Code. Ihre lokale JDK-Auswahl in `.idea/misc.xml` wird nicht versioniert.
 
 **Vor dem ersten Befehl:** Führen Sie `git status` aus. Nur bei sauberem Arbeitsbaum fortfahren. Speichern Sie offene Arbeit bewusst auf dem dazugehörigen Branch in einem Commit; bei Unsicherheit anhalten und Hilfe holen. `git status` zeigt Probleme nur an und stoppt eine eingefügte Befehlsfolge nicht automatisch. Führen Sie die folgenden Befehle deshalb einzeln aus und prüfen Sie jedes Ergebnis:
 

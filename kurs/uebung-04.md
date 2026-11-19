@@ -70,7 +70,22 @@ Die erste Version soll kompilieren und einen einfachen Ablauf zeigen. Offene Met
 
 ## 5. Testen, reviewen und gezielt vervollständigen
 
-Starten Sie die erste Version in Ihrer IDE oder mit einem installierten JDK im normalen Terminal (für einfache Dateien ohne Package-Deklaration):
+### IntelliJ IDEA: Standardweg
+
+1. Öffnen Sie **File → Open** und wählen Sie den **gesamten Repository-Ordner**, nicht nur `src/` oder eine einzelne Java-Datei. Warten Sie, bis IntelliJ das Projekt eingelesen hat.
+2. Falls kein Project SDK eingestellt ist: **File → Project Structure → Project → SDK** und das lokal installierte JDK auswählen. Ist es nicht gelistet, verwenden Sie **Add SDK → JDK** und wählen dessen Installationsordner. Ein JDK enthält Compiler und Laufzeit; eine reine Java-Laufzeit genügt nicht. Die JDK-Auswahl ist pro Computer einmal nötig.
+3. Öffnen Sie nach der Codegenerierung `src/Main.java`. Die Klasse `Main` hat keine `package`-Zeile und enthält `public static void main(String[] args)`. Klicken Sie auf das **grüne Dreieck links neben `main` → Run 'Main.main()'**. Alternativ wählen Sie oben **SWE1 Main** und klicken auf das grüne Dreieck. Die gemeinsame Startkonfiguration baut das Modul vor dem Start.
+4. Kontrollieren Sie die Ausgabe unten im Fenster **Run**. Bei erfolgreichem Ende erscheint **Process finished with exit code 0**. Prüfen Sie außerdem selbst, ob die Ergebnisse fachlich passen.
+
+Die Vorlage enthält ein Java-Modul `SWE1`, markiert `src/` als **Sources Root** und legt IntelliJ-Kompilate unter `out/` ab. Weder Maven noch Gradle oder eigene Classpath-Einträge sind nötig. Ein JDK wird lokal ausgewählt; weder dessen Name noch Rechnerpfad ist in den gemeinsamen Dateien festgelegt. Persönliche Einstellungen bleiben lokal.
+
+**Falls das grüne Dreieck fehlt:** Prüfen Sie zuerst die JDK-Auswahl und ob `src/` blau als Quellordner angezeigt wird. Bei einem bereits anders eingerichteten Projekt ohne Sources Root: Rechtsklick auf `src` → **Mark Directory as → Sources Root**. Fehlt auch das Modul, öffnen Sie den Repository-Ordner erneut. Falls nötig: **File → Project Structure → Modules → + → Import Module**, die vorhandene `SWE1.iml` wählen und dem Import folgen. Eine bereits funktionierende eigene Modulkonfiguration behalten Sie bei; legen Sie kein zweites Modul für dieselben Quellen an. Holen Sie bei einem unklaren Projektzustand technische Hilfe.
+
+**Bei „ClassNotFoundException: Main“:** Starten Sie direkt über das Dreieck in `src/Main.java`, damit keine alte Run-Konfiguration verwendet wird. Prüfen Sie die Build-Meldungen; bei Kompilierfehlern müssen diese zuerst behoben werden. Falls nötig, wählen Sie **Build → Rebuild Project** und starten erneut. Bleibt der Fehler bestehen, lassen Sie JDK, Modul und Sources Root technisch prüfen. Die Fehlermeldung allein beweist nicht, welcher dieser Punkte fehlt.
+
+### Terminal als Alternative
+
+Mit einem installierten JDK können Sie für einfache Dateien ohne Package-Deklaration weiterhin im Repository-Ordner starten:
 
 ```bash
 java -version

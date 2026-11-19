@@ -6,7 +6,13 @@
 - **Git im Zweierteam:** Folgen Sie vor Übung 4 der [vollständigen Anleitung zur Git-Teamarbeit](kurs/git-teamarbeit.md): bisherige Ergebnisse sichern, eigenes Team-Repository einrichten und vor jeder Übung die Lehrvorlage übernehmen. Bereits bestehende Team-Repositories werden weiterverwendet.
 - **Übung 4:** [Aufgaben und aktualisierte KI-Grenzen](kurs/uebung-04.md): Klassendiagramm eigenständig erstellen und als `docs/04-klassendiagramm/klassendiagramm.png` committen. Mit [model-to-java](.agents/skills/model-to-java/SKILL.md) zunächst eine kleine lauffähige Java-Version nach `src/` übertragen, selbst testen und reviewen, danach gezielt vervollständigen. Zwei bis drei Klassen sind eine Empfehlung; auch alle Klassen im Bild sind möglich. Später kann auf eigenen Auftrag ein separates Ist-Diagramm aus dem geprüften Code entstehen.
 
-`docs/` und `src/` enthalten Ihre Ergebnisse. `kurs/`, `.agents/skills/`, `.github/` und `AGENTS.md` werden vom Kurs gepflegt. Die Ausgangsvisionen unter `docs/` sind einmaliges Startmaterial, keine regelmäßig zu ersetzenden Vorlagen.
+`docs/` und `src/` enthalten Ihre Ergebnisse. Der Kurs pflegt Regeln, Skills, Übungshinweise und die portable IntelliJ-Konfiguration (`SWE1.iml`, `.idea/modules.xml`, `.run/Main.run.xml`). Die Ausgangsvisionen unter `docs/` sind einmaliges Startmaterial, keine regelmäßig zu ersetzenden Vorlagen.
+
+## Java in IntelliJ starten – ab Übung 4
+
+Öffnen Sie über **File → Open** den gesamten Repository-Ordner. Nach der Codegenerierung öffnen Sie `src/Main.java` und klicken links neben `main` auf das grüne Dreieck → **Run 'Main.main()'**. Alternativ wählen Sie oben **SWE1 Main** und klicken auf das grüne Dreieck. Kontrollieren Sie die Ausgabe im Fenster **Run**. Vor der Codegenerierung ist noch keine `Main.java` vorhanden.
+
+Falls IntelliJ ein JDK verlangt: **File → Project Structure → Project → SDK**, ein installiertes JDK wählen; falls es nicht gelistet ist, **Add SDK → JDK** und dessen Installationsordner wählen. Diese einmalige lokale Auswahl wird nicht geteilt. Weitere Hilfe für bestehende Projekte und Fehlermeldungen steht in der [IntelliJ-Startanleitung](kurs/uebung-04.md#intellij-idea-standardweg).
 
 ## Übung 3
 
